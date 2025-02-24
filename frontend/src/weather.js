@@ -15,8 +15,8 @@ const Weather = () => {
         setError("");
 
         try {
-            const weatherRes = await fetch(`http://localhost:5000/api/weather?city=${city}`);
-            const forecastRes = await fetch(`http://localhost:5000/api/forecast?city=${city}`);
+            const weatherRes = await fetch(`https://weather-dashboard-uci2.onrender.com/api/weather?city=${city}`);
+            const forecastRes = await fetch(`https://weather-dashboard-uci2.onrender.com/api/forecast?city=${city}`);
 
             const weatherData = await weatherRes.json();
             const forecastData = await forecastRes.json();
