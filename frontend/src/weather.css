@@ -1,0 +1,142 @@
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #98FB98, #008080); /* Mint to Teal */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Weather Card */
+.weather-card {
+    background: #F0F8FF; /* Soft White */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: #2F4F4F; /* Deep Navy */
+}
+
+/* Title */
+.weather-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #008080; /* Teal */
+}
+
+/* Search Input & Button */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.weather-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #008080; /* Teal Border */
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: #E0FFFF; /* Light Cyan */
+    color: #2F4F4F;
+}
+
+.weather-input:focus {
+    border-color: #006666; /* Darker Teal */
+}
+
+/* Search Button */
+.weather-button {
+    padding: 10px 15px;
+    background: #008080; /* Teal */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.weather-button:hover {
+    background: #006666; /* Darker Teal */
+}
+
+/* Current Conditions */
+.current-conditions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.condition-card {
+    background: linear-gradient(135deg, #66CDAA, #008080); /* Medium Aquamarine to Teal */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Sunrise & Sunset Section */
+.sunrise-sunset {
+    background: linear-gradient(135deg, #5F9EA0, #008B8B); /* Soft Gray-Blue */
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    color: white;
+}
+
+/* Hourly Forecast */
+.hourly-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.hour-card {
+    background: linear-gradient(135deg, #20B2AA, #008080); /* Light Sea Green */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+/* 6-Day Forecast */
+.forecast-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forecast-card {
+    background: linear-gradient(135deg, #66CDAA, #008080); /* Mint Green to Teal */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .current-conditions {
+        grid-template-columns: 1fr;
+    }
+}
