@@ -1,10 +1,10 @@
 .weather-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
     background: linear-gradient(135deg, #98FB98, #008080); /* Mint to Teal */
-    padding: 20px;
+    padding-top: 30px;
     box-sizing: border-box;
 }
 
