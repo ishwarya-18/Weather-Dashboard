@@ -5,6 +5,7 @@
     min-height: 100vh;
     background: linear-gradient(135deg, #98FB98, #008080); /* Mint to Teal */
     padding-top: 30px;
+    padding-bottom: 30px;
     box-sizing: border-box;
 }
 
@@ -136,6 +137,14 @@
 
 /* Responsive */
 @media (max-width: 600px) {
+    .current-conditions {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .weather-card {
+        max-width: 80%; /* Reduce width for better fit */
+    }
     .current-conditions {
         grid-template-columns: 1fr;
     }
